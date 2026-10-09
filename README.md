@@ -3,6 +3,7 @@
 Automatisierter PIN-Recovery-Tool für den Drehstromzähler **EMH ED300L** mittels ESP32-C3, optischem IR-Lesekopf, IR-Sendediode und einem 0,42" OLED-Display (72×40).
 
 Dieses Projekt probiert systematisch die Kombinationen `0000` bis `9999` aus, indem es Lichtimpulse an die optische Taste an der Gehäusefront des Stromzählers sendet. Sobald die richtige PIN eingegeben wurde, schaltet der Zähler den erweiterte SML-Datenstrom frei (OBIS `1-0:16.7.0` für die aktuelle Wirkleistung in Watt). Das Skript erkennt dies automatisch im Datenstrom, stoppt die Schleife und zeigt den gefundenen Code dauerhaft und groß auf dem Display an.
+inspiriert von https://github.com/philipparndt/smartmeter-pin-brute-force und https://pastebin.com/Rcxix0aX und zu arduino gewandelt
 
 ---
 
@@ -55,3 +56,4 @@ Der ED300L benötigt nach jeder Zifferneingabe eine Pause von ca. 3,3 Sekunden, 
 
 * Das Arbeiten an Zählern darf nur an eigenen oder dekommissionierten Geräten (z. B. gebrauchten Zählern von eBay für Zwischenzählung/Unterverteilung) erfolgen.
 * Achten Sie bei Messungen stets auf Berührungsschutz an den spannungsführenden 230/400V-Klemmen.
+
