@@ -1,4 +1,4 @@
-# ESP32-C3 EMH ED300L PIN Brute-Force & Recovery
+# ESP32-C3-OLED ED300L PIN Brute-Force / Recovery
 
 Automatisierter PIN-Recovery-Tool für den Drehstromzähler **EMH ED300L** mittels ESP32-C3, optischem IR-Lesekopf, IR-Sendediode und einem 0,42" OLED-Display (72×40).
 
@@ -9,10 +9,10 @@ inspiriert von https://github.com/philipparndt/smartmeter-pin-brute-force und ht
 
 ## Features
 
-* **Große Display-Anzeige:** Zentrierte, maximal große PIN-Anzeige auf dem 0,42" OLED (SSD1306, 72×40 Pixel).
+* **Große Display-Anzeige:** PIN-Anzeige auf dem 0,42" OLED (SSD1306, 72×40 Pixel).
 * **Automatische Erfolgs-Erkennung:** Liest das SML-Telegramm über die optische Schnittstelle (RX) ein und verifiziert die Freischaltung der Wirkleistung.
-* **Detailliertes Serielles Logging:** Zeitstempel-basiertes Log (`[HH:MM:SS.mmm]`) über den USB-CDC Port bei 115200 Baud.
-* **Auf ESP32-C3 optimiert:** Spezifische Hardware-UART- und I2C-Konfiguration zur Vermeidung von Pin-Konflikten.
+* **Detailliertes Serielles Logging:** Zeitstempel-basiertes Log über den USB-CDC Port bei 115200 Baud.
+* **Auf ESP32-C3-OLED optimiert:** Spezifische Hardware-UART- und I2C-Konfiguration zur Vermeidung von Pin-Konflikten.
 
 ---
 
@@ -55,5 +55,5 @@ Der ED300L benötigt nach jeder Zifferneingabe eine Pause von ca. 3,3 Sekunden, 
 ## Sicherheitshinweis & Haftungsausschluss
 
 * Das Arbeiten an Zählern darf nur an eigenen oder dekommissionierten Geräten (z. B. gebrauchten Zählern von eBay für Zwischenzählung/Unterverteilung) erfolgen.
-* Achten Sie bei Messungen stets auf Berührungsschutz an den spannungsführenden 230/400V-Klemmen.
+* Achte bei Messungen stets auf Berührungsschutz an den spannungsführenden 230/400V-Klemmen.
 
