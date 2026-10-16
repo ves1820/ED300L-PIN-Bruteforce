@@ -50,6 +50,7 @@ Der ED300L benötigt nach jeder Zifferneingabe eine Pause von ca. 3,3 Sekunden, 
 * **Dauer pro Versuch:** ca. 17–20 Sekunden
 * **Durchschnittliche Dauer (5.000 Versuche):** ~24–27 Stunden
 * **Maximaldauer (10.000 Versuche):** ~48–55 Stunden (durchgehender Betrieb)
+* die meisten PINs liegen oberhalb von 5000
 
 ---
 
